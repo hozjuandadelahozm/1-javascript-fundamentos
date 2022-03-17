@@ -49,7 +49,6 @@ const tony = {
 
 // Desectructuracion de un objeto
 const imprimePropiedades = ({ nombre, codeName, vivo, edad = 15, trajes  }) => {
-
     console.log({ nombre });
     console.log({ codeName });
     console.log({ vivo });
