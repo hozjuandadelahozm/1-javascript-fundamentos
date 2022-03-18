@@ -10,7 +10,7 @@ if ( a >= 10 ) {// undefined, null, una asignación
 // console.log('Fin de programa');
 
 const hoy = new Date(); // {}
-// let dia = hoy.getDay(); // 0: Domingo, 1: Lunes, 2: Martes.....
+let dia = hoy.getDay(); // 0: Domingo, 1: Lunes, 2: Martes.....
 
 // console.log({ dia });
 
@@ -24,22 +24,23 @@ const hoy = new Date(); // {}
 //     console.log('No es lunes, martes o domingo....');
 // }
 
-let dia;
-
-dia = 3;
+dia = 5;
 
 let diasLetras = { 
-    0: 'Domingo',
-    1: 'Lunes',
-    2: 'Martes',
-    3: 'Miercoles',
-    4: 'jueves',
-    5: 'Viernes',
-    6: 'Sabado' 
+    0: () => 'Domingo - 0',
+    1: () => 'Lunes - 1',
+    2: () => 'Martes - 2',
+    3: () => 'Miercoles - 3',
+    4: () => 'jueves - 4',
+    5: () => 'Viernes - 5',
+    6: () => 'Sabado - 6' 
 }
 
-console.log(diasLetras[5]);
+let diasLetras2 = ['Domingo','Lunes','Martes','Miercoles','jueves','Viernes','Sabado'];
 
+
+// console.log(diasLetras[dia]());
+console.log(diasLetras2[dia]);
 
 
 
